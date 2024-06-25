@@ -21,11 +21,6 @@ database.connect();
 //middlewares
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors({
-	origin: 'https://studynotionfrontend-mz5t1rg7v-nikhils-projects-c9a8812b.vercel.app',
-	methods: 'GET,POST,PUT,DELETE',
-	allowedHeaders: 'Content-Type,Authorization'
-  }));
 app.use(
 	cors({
 		origin:"*",
