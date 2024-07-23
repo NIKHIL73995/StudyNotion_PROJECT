@@ -61,7 +61,7 @@ export const fetchCourseDetails = async (courseId) => {
     // toast.error(error.response.data.message);
   }
   toast.dismiss(toastId)
-  //   dispatch(setLoading(false));
+    // dispatch(setLoading(false));
   return result
 }
 
