@@ -1,31 +1,100 @@
-# React & Tailwind CSS Starter Pack
 
-This is a starter pack for creating React projects with Tailwind CSS configured. It uses React version **18.2** and Tailwind CSS version **3.2**.
 
-## Usage
 
-This starter pack includes a basic setup for using **Tailwind CSS with React**. To start building your own components and styles, follow these steps:
+# StudyNotion
 
-1. Clone the repository to your local machine.
-    ```sh
-    git clone https://github.com/thepranaygupta/react-tailwind-css-starter-pack.git
-    ```
+StudyNotion is a fully functional educational platform built using the MERN stack (MongoDB, Express.js, React.js, and Node.js). The platform allows users to create, consume, and rate educational content. It also integrates AI-powered features using OpenAI NLP models, including transcription of video lectures, generating concise notes in PDF format, and enabling interactive learning through a chatbot.
 
-1. Install the required packages.
-    ```sh
-    cd react-tailwind-css-starter-pack
-    npm install
-    ```
+## Features
 
-1. Start the development server.
-    ```sh
-    npm start
-    ```
-1. Open the project in your browser at [`http://localhost:3000`](http://localhost:3000) to view your project.
-1. Create your React components and add your styles using Tailwind classes. You can also create new CSS files and import them into your components.
+- **Educational Content Creation & Consumption:** Users can create educational content and share it with others. Consumers can access the content and engage with it.
+- **AI-powered Note Generation:** The AI transcribes video lectures, generates summarized notes, and outputs them in a downloadable PDF format.
+- **Interactive Chatbot:** A chatbot that enables users to interact with educational content for an enhanced learning experience.
+- **Admin Panel:** Admins can manage users, content, and other aspects of the platform.
 
-The project is set up to use `postcss-cli` to process your CSS files. You can add your own `tailwind.config.js` file to customize your Tailwind setup.
+## Tech Stack
 
-## Contributing
+- **Frontend:** React.js
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB
+- **AI & APIs:** OpenAI NLP, Assembly API, Cloudinary, Razorpay
+- **Authentication:** JWT (JSON Web Tokens)
+- **Payment Integration:** Razorpay
+- **File Hosting:** Cloudinary
 
-Contributions are welcome! If you have any suggestions or find any issues, please feel free to open an issue or a pull request.# study_notion
+## Prerequisites
+
+- Node.js
+- MongoDB
+- React.js
+- Razorpay API Key (for payment gateway)
+- Cloudinary API Key (for media storage)
+- OpenAI API Key (for AI functionalities)
+
+## Setup
+
+### Clone the Repository
+
+Run the following commands in your terminal:
+
+``` git clone https://github.com/NIKHIL73995/StudyNotion_PROJECT.git ```
+
+``` cd StudyNotion_PROJECT ```
+
+
+### Install Dependencies
+
+#### Client (Frontend):
+
+1. Navigate to the `client` folder:
+2. ``` cd client ```
+3. Install the dependencies:
+4. ``` npm install ```  
+5. Create a `.env` file in the `client` folder and add the following configuration:
+   ```
+     REACT_APP_BASE_URL = http://localhost:4000/api/v1
+   ```
+
+
+
+#### Server (Backend):
+
+1. Navigate to the `server` folder:
+2. ``` cd server ```
+3. Install the dependencies:
+4. ``` npm install ```
+3. Create a `.env` file in the `server` folder and add the following configuration:
+```  
+# Mail Setup
+MAIL_USER = 
+MAIL_HOST = 
+MAIL_PASSWORD = 
+
+# JWT Secret
+JWT_SECRET = 
+
+# Razorpay
+RAZORPAY_KEY = 
+RAZORPAY_SECRET = 
+
+# Cloudinary
+CLOUDINARY_CLOUD_NAME = 
+CLOUDINARY_API_KEY = 
+CLOUDINARY_API_SECRET = 
+FOLDER_NAME = 
+
+# Assembly API
+ASSEMBLY_API_KEY =
+
+# OpenAI API
+
+OPENAI_API_KEY = 
+
+# MongoDB
+PORT = 4000
+MONGO_URL = 
+# MONGO_URL = 
+
+```
+
+
